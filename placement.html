@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Placement Cell</title>
+    <link rel="stylesheet" href="css/placement.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+  *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.logo
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+}
+.nav-list{
+    width: 50%;
+   
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.nav-list li{
+    list-style: none;
+    padding: 23px;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color:black;
+    
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color:grey;
+    
+}
+.nav-right{
+   
+    width: 50%;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.background{
+      
+    background: rgba(0,0,0,0) ;
+    background-size: cover;
+    background-blend-mode: darken; 
+}
+.box-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /*li a:hover, .dropdown:hover .dropbtn {
+    background-color:grey
+  }*/
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+<body>
+  <nav class="navbar background">
+    <ul class="nav-list">
+        <div class="logo"><img src="img/logo.png" alt="logo"></div>
+        <li><a href="placement.html">Home</a></li>
+        <li><a href="#about">About Us </a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class=""dropbtn>Login</a>
+        <div class="dropdown-content">
+            <a href="studentlogin.html">Student</a>
+            <a href="facultylogin.html">Fauctly</a>
+            <a href="adminLogin.html">Admin</a>
+        </div></li>
+        <li class="dropdown"><a href="javascript:void(0)" class=""dropbtn>Details</a>
+            <div class="dropdown-content">
+                <a href="StudentProfile.html">Student Details</a>
+                <a href="facultylogin.html">Faculty Details</a>
+                <a href="adminLogin.html">Admin Details</a>
+            </div></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+        <input type="text"name='search' id="search">
+      <button class="btn btn-sm">Search</button>
+    </div>
+
+</nav>
+
+    <section id="home">
+        <h1 class="h-primary">Placements take off Here</h1>
+        <p></p>
+        <p>From Campus to corporate </p>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">About Us</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/mainstudent.png" alt="">
+                <h2 class="h-secondary center">Students</h2>
+                <p class="center">Students need to register here to know the latest updates of recruitment drive</p>
+            </div>
+            <div class="box">
+                <img src="img/gradegraph.png" alt="">
+                <h2 class="h-secondary center">Grades</h2>
+                <p class="center">Based Upon there Grades i.e CGPA The Recruitment process will be Done</p>
+            </div>
+            <div class="box">
+                <img src="img/campus.jpg" alt="">
+                <h2 class="h-secondary center">Campus</h2>
+                <p class="center">On Campus Drives will be Done</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Top Visting Companies</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/google.png" alt="Google">
+            </div>
+            <div class="client-item">
+                <img src="img/fb.png" alt="Facebook">
+            </div>
+          
+            <div class="client-item">
+                <img src="img/netflix.png" alt="Netflix">
+            </div>
+            <div class="client-item">
+                <img src="img/apple.png" alt="Apple">
+            </div>
+            <div class="client-item">
+              <img src="img/Microsoft.png" alt="Microsoft">
+          </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.placement.com. From CAMPUS to CORPORATE!!
+        </div>
+    </footer>
+</body>
+
+</html>
